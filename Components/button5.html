@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+
+		<style>
+			body {
+				height: 100vh;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background-color: #222;
+			}
+
+			a {
+				text-decoration: none;
+				padding: 40px 80px;
+				color: white;
+				border: 3px solid white;
+				font-size: 40px;
+				font-family: sans-serif;
+				transition: all 1s;
+				position: relative;
+				overflow: hidden;
+			}
+
+			a:before {
+				content: "Yeah!";
+				color: white;
+				background-color: #f44336;
+				position: absolute;
+				left: 0;
+				top: 0;
+				height: 100%;
+				width: 100%;
+				transform: translateY(-100%);
+				transition: all 1s;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+
+			a:hover:before {
+				transform: translateY(0);
+			}
+		</style>
+	</head>
+	<body>
+		<a href="#">Hover Me</a>
+	</body>
+</html>
