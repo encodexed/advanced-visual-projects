@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			body {
+				margin: 0;
+				height: 100vh;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				background-color: #272727;
+			}
+
+			button {
+				font-family: sans-serif;
+				border: none;
+				padding: 12px 40px;
+				background-color: #c47135;
+				color: white;
+				font-size: 22px;
+				text-transform: uppercase;
+				cursor: pointer;
+				position: relative;
+				transition: all 0.25s;
+			}
+
+			button:before {
+				content: "";
+				position: absolute;
+				width: 24px;
+				height: 24px;
+				top: -5px;
+				left: -5px;
+				border-top: 2px solid #c47135;
+				border-left: 2px solid #c47135;
+				transition: all 0.25s;
+			}
+
+			button:hover:before,
+			button:hover:after {
+				height: 114%;
+				width: 105%;
+			}
+
+			button:hover:before {
+				border-top: 2px solid #35c443;
+				border-left: 2px solid #35c443;
+			}
+
+			button:hover:after {
+				border-bottom: 2px solid #35c443;
+				border-right: 2px solid #35c443;
+			}
+
+			button:after {
+				content: "";
+				position: absolute;
+				width: 24px;
+				height: 24px;
+				bottom: -5px;
+				right: -5px;
+				border-bottom: 2px solid #c47135;
+				border-right: 2px solid #c47135;
+				transition: all 0.25s;
+			}
+
+			button:hover {
+				background-color: #35c443;
+			}
+		</style>
+	</head>
+	<body>
+		<button>Submit</button>
+	</body>
+</html>
